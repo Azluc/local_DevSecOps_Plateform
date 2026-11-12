@@ -1,2 +1,5 @@
 # ignorer le fichier test.txt
 test.txt
+
+# ignore le dossier ssh
+/test
