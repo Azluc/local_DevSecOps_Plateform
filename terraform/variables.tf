@@ -21,3 +21,9 @@ variable "image_path" {
     type = string
     default = "ubuntu-26.04-lts-cloudimg-amd.img"
 }
+
+variable "image_path" {
+  description = "ubuntu image cloud path"
+  type = string
+  default = "/var/lib/libvirt/images/base/ubuntu-26.04-lts-cloudimg-amd.img"
+}
