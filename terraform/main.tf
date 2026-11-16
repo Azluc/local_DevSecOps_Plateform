@@ -37,7 +37,10 @@ resource "libvirt_volume" "os_disk" {
 }
 
 resource "libvirt_domain" "vm" {
-    name = "vm-${each.key}"
-    type = "kvm"
+  name = "vm-${each.key}"
+  type = "kvm"
+  memory = var.vm_memory
+  memory_units = "MiB"
+  vpcu = each.value["vcpu"]
   
 }

@@ -34,6 +34,12 @@ variable "vms" {
   }
 }
 
+variable "vm_memory"{
+  description = "memory ram in MiB"
+  type = number
+  default = 2048
+}
+
 variable "image_name" {
     description = "path to cloud image"
     type = string
